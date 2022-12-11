@@ -1,0 +1,16 @@
+:root{
+    --loader--dimension:170px;
+    --half-fullSize:50%;
+   
+      --one-hundred-percent:100%;
+      --transition-hamburguer:3s;
+  }
+#app,html,body{
+    width: var(--one-hundred-percent);
+    height: var(--one-hundred-percent);
+    margin: 0;padding: 0;
+}
+*,html,body{
+    margin: 0;padding: 0;
+    box-sizing: border-box;
+}

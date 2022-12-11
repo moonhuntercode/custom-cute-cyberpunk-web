@@ -1,0 +1,206 @@
+:root{
+    --one-hundred-percent:100%;
+    --transition-hamburguer:3s;
+}
+body,html{
+    /* with hex color  */
+    width: var(--one-hundred-percent);
+    height: var(--one-hundred-percent);
+    margin: 0;
+    padding: 0;
+}
+#containerView1 {
+    display: none;
+    text-align: center;
+    color: #f3f3f3;
+    width: var(--one-hundred-percent);
+    height: var(--one-hundred-percent);
+  }
+.containerTwo{
+    background-color:#936DFE;
+    display: flex;
+    flex-wrap: wrap;
+    place-content: center;
+    width: var(--one-hundred-percent);
+    height: var(--one-hundred-percent);
+    object-fit: contain;
+}
+.containerTwo > .portada{
+    position: absolute;
+    bottom: -30px;
+    display: flex;
+    flex-wrap: wrap;
+    align-content:flex-end;
+    align-items: flex-end;
+    background-image: url('../images/vinne-anime-recortada.png');
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: contain;
+    animation: logocrazy 2s infinite alternate;
+    object-fit: contain;
+    overflow-y: hidden;
+    z-index: 1;
+}
+.portada > .img_portada{
+    /* width: 100vw; */
+    position: relative;
+    width: var(--one-hundred-percent);
+    height: 70vh;
+    visibility: hidden;
+    overflow: hidden;
+    object-fit: cover;
+    object-position: bottom;
+    
+}
+.portada > .img_portada> img{
+    width: 51em;
+}
+@media only  screen and (max-width:620px){
+    .portada > .img_portada{
+        width: 100vw;
+        height: 75vh;
+        display: flex;
+    object-fit: cover;
+    flex-wrap: wrap;    
+        /* margin-bottom: -460px; */
+    }
+}
+.search_engine{
+    width: var(--one-hundred-percent);
+    margin-bottom:25%;
+    
+}
+.containerTwo > .container_search_engine{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    
+    
+    width: 80%;
+    height: 50%;
+}
+.container_search_engine > .input_search {
+    width: var(--one-hundred-percent);
+    margin: 0 auto;
+    
+}
+.container_search_engine  > .input_search > input{
+    background-color: rgb(218, 218, 218);
+    width: var(--one-hundred-percent);
+    height: 5em;
+    z-index: 3;
+    position: relative;
+    border-radius: 30px;
+    border:5px  #030303 solid;
+    background-size:  contain;
+    background-repeat: no-repeat;
+    background-image: url("../images/search-icon-copy.svg");
+    background-position: right;
+    
+    
+    
+}
+.container_search_engine > .input_search >input:focus,input:active{
+    top: 30%;
+position: fixed;
+transform: translate(-50%,-120%);
+    background-color: #030303 ;
+   z-index: 4;
+   border: 8px solid black;
+   color: #936DFE;
+   cursor: pointer;
+   transition: all 0.3s ease-in;
+   font-size: xx-large;
+   overflow: visible;
+   overflow-y: scroll;
+   height: 240px;
+}
+
+.icon_search{
+    display: flex;
+    flex-flow: column wrap ;
+    color: rgb("#BB44FF"); 
+    
+   
+}
+.icon_search > img{
+    place-self: flex-end;
+    position: relative;
+    
+    float: right;
+    width: 3em;
+    visibility: hidden;
+    cursor: pointer;   
+    margin-top: 10px;
+    
+}
+.icon_search > img:hover{
+    transition: all 0.3s ease-in;
+    transform: scale(1.2);
+}
+.icon_search > img:active{
+    transition: all 0.6s ease-in;
+    transform: scale(0.3);
+}
+
+/* twitch icon  */
+/* colocar todas las
+redes responsive */
+.social_networks{
+    display: flex;
+    flex-wrap: column wrap;
+    justify-content: space-around;
+    position: absolute;
+    width: 100%;
+    height: 10vh;
+    z-index: 3;
+    gap: 10px;
+    
+    /* visibility: hidden; */
+
+
+}
+.social_networks .icons_social_networks{
+    position: relative;
+    
+    
+    
+}
+.social_networks > .icons_social_networks  img{
+    width: 4em;
+    z-index: 3;
+    /* animation: logocrazy 1s infinite alternate; */
+}
+img:hover{
+    cursor: pointer;
+    transition: all 0.6s ease-in;
+    transform: scale(1.2);
+}
+img:active{
+    transition: all 0.5s ease-in;
+    transform: scale(0.3);
+}
+@keyframes logocrazy {
+ from{
+    transform: translate(0);opacity:0.1;
+ }   
+ to{
+    transform: translateY(-25px);
+ }
+}
+
+/* object1 */
+.object1{
+    display: none;
+    /* visibility: hidden; */
+    background-color: #3402be;
+    position: absolute;
+    width: 350px;
+    height: 400px;
+    z-index: 0;
+
+}
+.object1:active{
+    transition: all 2s ease-in;
+
+}

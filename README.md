@@ -9,6 +9,9 @@ with web components in beta version
 
 >##  **para los que quieran contribuir en mi proyecto**
 las instrucciones para entorno de desarrollo son:
+Descargarlo o colaborarlo con github,y si lo descarga:
+
+
 Escribir en su terminal,o CLI (o consola) lo siguiente:
 
 
@@ -19,6 +22,9 @@ Escribir en su terminal,o CLI (o consola) lo siguiente:
 2) para ejecutar entorno de desarrolo
 
 >pnpm dev
+----------------
+# desafios pendientes
 
+-seguir el diseño creado en adobe xd
 
-
+-hacerlo más bonito

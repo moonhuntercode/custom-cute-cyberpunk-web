@@ -11,6 +11,9 @@ with web components in beta version
 las instrucciones para entorno de desarrollo son:
 Descargarlo o colaborarlo con github,y si lo descarga:
 
+    instalar nodejs with stable version +10(o más moderno) 
+    
+<a href="https://nodejs.org/en/download" title="oficial website" target="_blank">node js download</a> 
 
 Escribir en su terminal,o CLI (o consola) lo siguiente:
 
@@ -25,6 +28,6 @@ Escribir en su terminal,o CLI (o consola) lo siguiente:
 ----------------
 # desafios pendientes
 
--seguir el diseño creado en adobe xd
+-seguir o mejorar el diseño creado en adobe xd,que está dentro de la carpeta design,dentro de este mismo repositorio
 
--hacerlo más bonito
+-hacerlo más bonito, más accesible,cumplir con el pixel perfect o mejorarlo según tu nesecidad,o entretenimiento xd,sin alterar la paleta de colores,o el estilo de el proyecto

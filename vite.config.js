@@ -1,7 +1,8 @@
 // vite.config.js
 export default {
-  base: 'http://localhost:8080/',
-server: {
-  port: '8080'
-}
-}
+  base: "https://moonhuntercode.github.io/custom-cute-cyberpunk-web/",
+
+  server: {
+    port: "8080",
+  },
+};

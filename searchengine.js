@@ -1,5 +1,5 @@
 import { LitElement, html, css } from "lit";
-import styles2 from "./css/home.css";
+// import styles2 from "./css/home.css";w
 import twitchIcon from "./images/twitch-icon-5.png";
 import instagramIcon from "./images/instagram.png";
 import searchIcon from "./images/search-icon.png";

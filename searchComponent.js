@@ -1,5 +1,10 @@
 import "./css/home.css";
-document.querySelector(".search_engine").innerHTML =//html
+import twitchIcon from "./images/twitch-icon-5.png";
+import instagramIconImg from "./images/instagram.png";
+import searchIcon from "./images/search-icon.png";
+import youtubeIcon from "./images/white-youtube.png";
+document.querySelector(".search_engine").innerHTML =
+  //html
   `
 <div class="container_search_engine inputSelect">
 <div class="input_search inputSelect">
@@ -12,30 +17,20 @@ placeholder="cosita hermoza,cosita bien hecha!!"
             </div>
         <div class="object1"></div>
         <div class="icon_search">
-            <img src="./images/search-icon.png" 
-            alt="icon-search">
-            </div>
+          <img src="${searchIcon}" alt="icon-search" />
+        </div>
         <br>
         <div class="social_networks">
-            <div 
-            id="twitch_icon"
-            class="icons_social_networks">
-                <img src="./images/twitch-icon-5.png"
-                 alt="twitch-icon-5">
-            </div>
-            <div
-            id="youtube_icon" 
-            class="icons_social_networks">
-                <img src="./images/white-youtube.png"
-                 alt="white-youtube">
-            </div>
-            <div 
-            id="instagram_icon"
-            class="icons_social_networks">
-                <img src="./images/instagram.png"
-                 alt="instagram">
-            </div>
-            </div>
+        <div id="twitch_icon" class="icons_social_networks">
+          <img src="${twitchIcon}" alt="twitch-icon-5" />
+        </div>
+        <div id="youtube_icon" class="icons_social_networks">
+          <img src="${youtubeIcon}" alt="white-youtube" />
+        </div>
+        <div id="instagram_icon" class="icons_social_networks">
+          <img src="${instagramIconImg}" alt="instagram" />
+        </div>
+      </div>
 
     </div>    
 `;

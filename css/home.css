@@ -55,6 +55,16 @@ body,html{
 .portada > .img_portada> img{
     width: 51em;
 }
+@media only  screen and (min-width:620px){
+    .portada > .img_portada{
+        width: 100vw;
+        height: 75vh;
+        display: flex;
+    object-fit: cover;
+    flex-wrap: wrap;    
+        /* margin-bottom: -460px; */
+    }
+}
 @media only  screen and (max-width:620px){
     .portada > .img_portada{
         width: 100vw;

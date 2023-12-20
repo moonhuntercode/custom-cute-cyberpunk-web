@@ -28,8 +28,10 @@ Escribir en su terminal,o CLI (o consola) lo siguiente:
 ----------------
 # desafios pendientes
 
--seguir o mejorar el diseño creado en adobe xd,que está dentro de la carpeta design,dentro de este mismo repositorio
+iconos a usar: ❌✅
+❌-seguir o mejorar el diseño creado en adobe xd,que está dentro de la carpeta design,dentro de este mismo repositorio
 
--hacerlo más bonito, más accesible,cumplir con el pixel perfect o mejorarlo según tu nesecidad,o entretenimiento xd,sin alterar la paleta de colores,o el estilo de el proyecto
--estoy pensando seriamente usar [Fuse.js](https://www.fusejs.io/demo.html), luego de una pequeña busqueda, lo que me parece más tentador esque, es -> **zero dependecies**
+❌-hacerlo más bonito, más accesible,cumplir con el pixel perfect o mejorarlo según tu nesecidad,o entretenimiento xd,sin alterar la paleta de colores,o el estilo de el proyecto
+🎯 -estoy pensando seriamente usar [Fuse.js](https://www.fusejs.io/demo.html), luego de una pequeña busqueda, lo que me parece más tentador esque, es:
+->🥇 **zero dependecies**
 

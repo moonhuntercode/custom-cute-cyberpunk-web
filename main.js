@@ -1,13 +1,11 @@
-import './style.css'
-import './css/home.css'
-import './css/loader.css'
-import './css/modal.css'
-import './css/navbar.css'
-import './css/variables.css'
-import javascriptLogo from './javascript.svg'
+import "./style.css";
+import "./css/home.css";
+import "./css/loader.css";
+import "./css/modal.css";
+import "./css/navbar.css";
+import "./css/variables.css";
 
-
-
+// prettier-ignore
 document.querySelector('#app').innerHTML = //html
 `
   <div>
@@ -88,42 +86,42 @@ vdc@gmail.com
 `
 
 // MENU ANIMATION,CONFIG START
-const menu=document.getElementsByClassName('menu')[0];
-const bars=menu.children
+const menu = document.getElementsByClassName("menu")[0];
+const bars = menu.children;
 
-menu.addEventListener('click',()=>{
-    for (let i = 0; i < bars.length; i++) {
-        bars[i].classList.remove('no-anim')
-        bars[i].classList.toggle('active')
-        
-    }
-})
+menu.addEventListener("click", () => {
+  for (const element of bars) {
+    element.classList.remove("no-anim");
+    element.classList.toggle("active");
+  }
+});
 // MENU ANIMATION END
-const menuActive=document.getElementsByClassName('active_menu');
-const menuDisplay=menuActive;
-const bars2=menu.classList;
-const container_menu_hamburgueza=document.getElementsByClassName('container_menu_hamburgueza')[0];
-const leftActive=document.getElementsByClassName('center')[0];
-const linksInsideWindow=document.getElementsByClassName('containerWindow')[0];
-var toggleClass=function toggleClass(element,stringClass){}
-menu.addEventListener('click',()=>{
-    
-    menu.classList.toggle("active_menu")
-    // document.getElementsByClassName('active_menu')[0].style.display='block';
-    container_menu_hamburgueza.classList.toggle("fullScreenContainer");
-    leftActive.classList.toggle('center_active')
-    if (menu.classList.contains('active_menu')) {
-linksInsideWindow.style.display='block'
-        linksInsideWindow.innerHTML=//html
-        `
+const menuActive = document.getElementsByClassName("active_menu");
+const menuDisplay = menuActive;
+const bars2 = menu.classList;
+const container_menu_hamburgueza = document.getElementsByClassName(
+  "container_menu_hamburgueza"
+)[0];
+const leftActive = document.getElementsByClassName("center")[0];
+const linksInsideWindow = document.getElementsByClassName("containerWindow")[0];
+ 
+menu.addEventListener("click", () => {
+  menu.classList.toggle("active_menu");
+  // document.getElementsByClassName('active_menu')[0].style.display='block';
+  container_menu_hamburgueza.classList.toggle("fullScreenContainer");
+  leftActive.classList.toggle("center_active");
+  if (menu.classList.contains("active_menu")) {
+    linksInsideWindow.style.display = "block";
+    linksInsideWindow.innerHTML =
+      //html
+      `
         <div class="containerWindow">
         <div>home</div>
         <div>about</div>
         <div>contact</div>
         </div>
-        `
-    }
-    else{
-        linksInsideWindow.style.display='none'
-    }
-})
+        `;
+  } else {
+    linksInsideWindow.style.display = "none";
+  }
+});

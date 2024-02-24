@@ -3,8 +3,9 @@ import twitchIcon from "./images/twitch-icon-5.png";
 import instagramIconImg from "./images/instagram.png";
 import searchIcon from "./images/search-icon.png";
 import youtubeIcon from "./images/white-youtube.png";
-document.querySelector(".search_engine").innerHTML =
-  //html
+
+// prettier-ignore
+document.querySelector(".search_engine").innerHTML =//html
   `
 <div class="container_search_engine inputSelect">
 <div class="input_search inputSelect">
@@ -60,7 +61,7 @@ fetch("http://jsonplaceholder.typicode.com/users")
       header.textContent = user.name;
       bodyCard.textContent = user.email;
       userCardContainer.append(card);
-      console.log(user);
+      // console.log(user);
       return { name: user.name, email: user.email, element: card };
     });
   });
@@ -89,9 +90,9 @@ btn.oninput = function () {
 btn.onclick = function () {
   document.querySelector(".modal").style.paddingTop = "350px";
   modal.style.display = "block";
-  console.log(elementsArray);
+  // console.log(elementsArray);
   // console.log(document.querySelector('.modal').style.paddingTop)
-  console.log(document.getElementsByClassName("input_search"));
+  // console.log(document.getElementsByClassName("input_search"));
 };
 
 // When the user clicks on <span> (x), close the modal
@@ -112,7 +113,7 @@ const windowOfSearchs = document.getElementById("input_search");
 const object1 = document.querySelector(".object1");
 const instagramIcon = document.getElementById("instagram_icon");
 
-console.log(windowOfSearchs);
+// console.log(windowOfSearchs);
 function modify() {
   if (object1.style.display === "none") {
     object1.style.display = "block";

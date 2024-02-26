@@ -1,3 +1,5 @@
+@import "./variables.css";
+
 :root {
   --one-hundred-percent: 100%;
   --transition-hamburguer: 3s;
@@ -10,6 +12,7 @@ html {
   margin: 0;
   padding: 0;
 }
+
 #containerView1 {
   display: none;
   text-align: center;
@@ -89,7 +92,6 @@ html {
 }
 .container_search_engine > .input_search {
   width: var(--one-hundred-percent);
-  margin: 0 auto;
 }
 .container_search_engine > .input_search > input {
   background-color: rgb(72, 31, 168);
@@ -106,15 +108,16 @@ html {
   background-position: right;
 
   &::placeholder {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-
+    font-family: "acadian runes";
     text-align: center;
+    font-weight: bold;
+    letter-spacing: 0.3vw;
     color: rgba(255, 255, 255, 0.479);
     font-size: 3.5vw;
   }
   &:focus,
   :active {
-    top: 30%;
+    top: 40%;
     position: fixed;
     transform: translate(-50%, -120%);
     background-color: #030303;

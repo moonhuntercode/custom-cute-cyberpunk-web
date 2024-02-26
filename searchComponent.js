@@ -12,7 +12,7 @@ document.querySelector(".search_engine").innerHTML =//html
 <input 
 id="input_searchId" class=" inputSelect" title="search" 
             
-placeholder="COSITA HERMOZA!,COSITA BIEN HECHA!!!" 
+placeholder="COSITA HERMOZA!  ,COSITA BIEN HECHA!!!" 
             type="search" data-search
             >
             </div>

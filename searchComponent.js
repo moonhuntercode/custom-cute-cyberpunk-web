@@ -113,6 +113,7 @@ const windowOfSearchs = document.getElementById("input_search");
 const object1 = document.querySelector(".object1");
 const instagramIcon = document.getElementById("instagram_icon");
 
+
 // console.log(windowOfSearchs);
 function modify() {
   if (object1.style.display === "none") {

@@ -1,4 +1,4 @@
-@import "./variables.css";
+@import "./reset_variables.css";
 
 :root {
   --one-hundred-percent: 100%;

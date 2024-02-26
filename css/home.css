@@ -1,9 +1,9 @@
 @import "./reset_variables.css";
+@import "./loader.css";
+@import "./modal.css";
+@import "./navbar.css";
 
-:root {
-  --one-hundred-percent: 100%;
-  --transition-hamburguer: 3s;
-}
+
 body,
 html {
   /* with hex color  */

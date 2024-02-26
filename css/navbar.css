@@ -1,16 +1,3 @@
-/* // delete the following line if no text is used */
-/* // edit the line if you wanna use other fonts */
-/* @import url(https://fonts.googleapis.com/css?family=Open+Sans:700,300); */
-
-/* // use only the available space inside the 400x400 frame */
-:root {
-  --one-hundred-percent: 100%;
-  --transition-hamburguer: 3s;
-}
-* {
-  box-sizing: border-box;
-}
-
 .container_menu_hamburgueza {
   position: absolute;
   top: 0;
@@ -47,7 +34,6 @@
   position: relative;
   height: 55px;
   width: 80px;
-  
 }
 
 .menu div {
@@ -177,6 +163,7 @@
   height: 60px;
   background-color: rgb(25, 25, 25);
   -webkit-transform: translate(0px, 0px);
+  transform: translate(0px, 0px);
   animation: spand 5s alternate 1s infinite;
 }
 @keyframes spand {

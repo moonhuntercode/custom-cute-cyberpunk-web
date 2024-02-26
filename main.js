@@ -1,9 +1,4 @@
-import "./style.css";
 import "./css/home.css";
-import "./css/loader.css";
-import "./css/modal.css";
-import "./css/navbar.css";
-import "./css/reset_variables.css";
 
 // prettier-ignore
 document.querySelector('#app').innerHTML = //html
@@ -105,8 +100,7 @@ const bars2 = menu.classList;
 
 const leftActive = document.getElementsByClassName("center")[0];
 const linksInsideWindow = document.getElementsByClassName("containerWindow")[0];
-
-container_menu_hamburgueza.addEventListener("click", () => {
+function behavior_of_containerWindow() {
   menu.classList.toggle("active_menu");
   // document.getElementsByClassName('active_menu')[0].style.display='block';
   container_menu_hamburgueza.classList.toggle("fullScreenContainer");
@@ -125,4 +119,15 @@ container_menu_hamburgueza.addEventListener("click", () => {
   } else {
     linksInsideWindow.style.display = "none";
   }
-});
+}
+container_menu_hamburgueza.addEventListener(
+  "click",
+  (behavior_of_containerWindow) => {
+    behavior_of_containerWindow
+      ? behavior_of_containerWindow()
+      : container_menu_hamburgueza.removeEventListener(
+          "click",
+          behavior_of_containerWindow
+        );
+  }
+);

@@ -86,14 +86,22 @@ btn.oninput = function () {
   btn.innerHTML = btn.value;
 
   // console.log( btn.innerHTML)-----
+  /* do something that appear x in right position
+   *this x delete text content insite input
+   */
 };
-btn.onclick = function () {
-  document.querySelector(".modal").style.paddingTop = "350px";
-  modal.style.display = "block";
-  // console.log(elementsArray);
-  // console.log(document.querySelector('.modal').style.paddingTop)
-  // console.log(document.getElementsByClassName("input_search"));
-};
+btn.onclick =
+  /**
+   * Description placeholder
+   * @date 2/26/2024 - 6:16:27 PM
+   */
+  function () {
+    document.querySelector(".modal").style.paddingTop = "350px";
+    modal.style.display = "block";
+    // console.log(elementsArray);
+    console.log(document.querySelector(".modal").style.paddingTop);
+    // console.log(document.getElementsByClassName("input_search"));
+  };
 
 // When the user clicks on <span> (x), close the modal
 span.onclick = function () {
@@ -113,7 +121,6 @@ const windowOfSearchs = document.getElementById("input_search");
 const object1 = document.querySelector(".object1");
 const instagramIcon = document.getElementById("instagram_icon");
 
-
 // console.log(windowOfSearchs);
 function modify() {
   if (object1.style.display === "none") {
@@ -123,7 +130,12 @@ function modify() {
   }
 }
 function linkConEspera() {
-  setTimeout(() => window.open("https://www.instagram.com/victorcode_/"), 3000);
+  // crear un cronómetro de 3seg pra avisar cuando me llevo a mi ig
+  document.createElement("div");
+  alert("en 3seg te llevo a mi ig...");
+
+  setInterval(console.log("en 3seg te llevo a mi ig..."), 0);
+  setTimeout(() => window.open("https://www.instagram.com/victorcode_/"), 2500);
 }
 instagramIcon.addEventListener("click", linkConEspera, false);
 // windowOfSearchs.addEventListener("click",modify,false)

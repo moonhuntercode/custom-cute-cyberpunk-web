@@ -30,7 +30,7 @@ document.querySelector('#app').innerHTML = //html
   <div class="containerTwo">
     
 
-    <!-- modal -->
+    <!-- modal -->  
     <!-- Trigger/Open The Modal -->
     <!-- <button id="myBtn">Open Modal</button> -->
 <!-- The Modal -->
@@ -120,14 +120,11 @@ function behavior_of_containerWindow() {
     linksInsideWindow.style.display = "none";
   }
 }
-container_menu_hamburgueza.addEventListener(
-  "click",
-  (behavior_of_containerWindow) => {
-    behavior_of_containerWindow
-      ? behavior_of_containerWindow()
-      : container_menu_hamburgueza.removeEventListener(
-          "click",
-          behavior_of_containerWindow
-        );
-  }
-);
+container_menu_hamburgueza.addEventListener("click", () => {
+  behavior_of_containerWindow
+    ? behavior_of_containerWindow()
+    : container_menu_hamburgueza.removeEventListener(
+        "click",
+        behavior_of_containerWindow
+      );
+});

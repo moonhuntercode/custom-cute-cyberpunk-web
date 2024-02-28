@@ -3,7 +3,6 @@
 @import "./modal.css";
 @import "./navbar.css";
 
-
 body,
 html {
   /* with hex color  */
@@ -93,7 +92,7 @@ html {
 .container_search_engine > .input_search {
   width: var(--one-hundred-percent);
 }
-.container_search_engine > .input_search > input {
+.container_search_engine > .input_search > input[type="search"]#input_searchId {
   background-color: rgb(72, 31, 168);
   color: white;
   width: var(--one-hundred-percent);
@@ -130,6 +129,12 @@ html {
     overflow: visible;
     overflow-y: scroll;
     height: 240px;
+  }
+  &::-webkit-search-cancel-button {
+    /* display: none; */
+
+    visibility: hidden;
+    -webkit-appearance: none;
   }
 
   /* end */

@@ -3,15 +3,16 @@ import twitchIcon from "./images/twitch-icon-5.png";
 import instagramIconImg from "./images/instagram.png";
 import searchIcon from "./images/search-icon.png";
 import youtubeIcon from "./images/white-youtube.png";
-document.querySelector(".search_engine").innerHTML =
-  //html
+
+// prettier-ignore
+document.querySelector(".search_engine").innerHTML =//html
   `
 <div class="container_search_engine inputSelect">
 <div class="input_search inputSelect">
 <input 
 id="input_searchId" class=" inputSelect" title="search" 
             
-placeholder="cosita hermoza,cosita bien hecha!!" 
+placeholder="COSITA HERMOZA!  ,COSITA BIEN HECHA!!!" 
             type="search" data-search
             >
             </div>
@@ -60,7 +61,7 @@ fetch("http://jsonplaceholder.typicode.com/users")
       header.textContent = user.name;
       bodyCard.textContent = user.email;
       userCardContainer.append(card);
-      console.log(user);
+      // console.log(user);
       return { name: user.name, email: user.email, element: card };
     });
   });
@@ -85,14 +86,22 @@ btn.oninput = function () {
   btn.innerHTML = btn.value;
 
   // console.log( btn.innerHTML)-----
+  /* do something that appear x in right position
+   *this x delete text content insite input
+   */
 };
-btn.onclick = function () {
-  document.querySelector(".modal").style.paddingTop = "350px";
-  modal.style.display = "block";
-  console.log(elementsArray);
-  // console.log(document.querySelector('.modal').style.paddingTop)
-  console.log(document.getElementsByClassName("input_search"));
-};
+btn.onclick =
+  /**
+   * Description placeholder
+   * @date 2/26/2024 - 6:16:27 PM
+   */
+  function () {
+    document.querySelector(".modal").style.paddingTop = "350px";
+    modal.style.display = "block";
+    // console.log(elementsArray);
+    console.log(document.querySelector(".modal").style.paddingTop);
+    // console.log(document.getElementsByClassName("input_search"));
+  };
 
 // When the user clicks on <span> (x), close the modal
 span.onclick = function () {
@@ -112,7 +121,7 @@ const windowOfSearchs = document.getElementById("input_search");
 const object1 = document.querySelector(".object1");
 const instagramIcon = document.getElementById("instagram_icon");
 
-console.log(windowOfSearchs);
+// console.log(windowOfSearchs);
 function modify() {
   if (object1.style.display === "none") {
     object1.style.display = "block";
@@ -121,7 +130,12 @@ function modify() {
   }
 }
 function linkConEspera() {
-  setTimeout(() => window.open("https://www.instagram.com/victorcode_/"), 3000);
+  // crear un cronómetro de 3seg pra avisar cuando me llevo a mi ig
+  document.createElement("div");
+  alert("en 3seg te llevo a mi ig...");
+
+  setInterval(console.log("en 3seg te llevo a mi ig..."), 0);
+  setTimeout(() => window.open("https://www.instagram.com/victorcode_/"), 2500);
 }
 instagramIcon.addEventListener("click", linkConEspera, false);
 // windowOfSearchs.addEventListener("click",modify,false)

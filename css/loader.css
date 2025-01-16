@@ -1,10 +1,4 @@
-:root{
-  --loader--dimension:170px;
-  --half-fullSize:50%;
- 
-    --one-hundred-percent:100%;
-    --transition-hamburguer:3s;
-}
+
 .container_loader{
   display: flex;
   place-content: center;

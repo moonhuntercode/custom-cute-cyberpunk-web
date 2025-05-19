@@ -29,6 +29,9 @@ Escribir en su terminal,o CLI (o consola) lo siguiente:
 # desafios pendientes
 
 iconos a usar: ❌✅
+
+✅- MIGRADO A YARN CON ÉXITO,YA NO USARÉ PNPM💖
+
 ❌-seguir o mejorar el diseño creado en adobe xd,que está dentro de la carpeta design,dentro de este mismo repositorio
 
 ❌-hacerlo más bonito, más accesible,cumplir con el pixel perfect o mejorarlo según tu nesecidad,o entretenimiento xd,sin alterar la paleta de colores,o el estilo de el proyecto
